@@ -1,0 +1,95 @@
+@media screen and (max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Monsterrat;
+        src: url(fonts/Montserrat-VariableFont_wght.ttf);
+    }
+
+    body {
+        height: 100dvh;
+        background-image: url(images/home-bg-image.png);
+        background-size: cover;
+        font-family: Monsterrat;
+    }
+
+    header {
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        background-color: transparent;
+        height: 50px;
+        color: white;
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .hero {
+        padding-top: 30px;
+        padding-left: 20px;
+        border: 1px solid blue;
+        color: white;
+        font-family: Monsterrat;
+    }
+    
+    .hero-heading {
+        color: white;
+        font-size: 64pt;
+        padding: 0;
+        margin: 0;
+        font-family: Monsterrat;
+        font-weight: 600;
+    }
+
+    .hero-content {
+        color: white;
+        padding-top: 30px;
+        font-size: 18pt;
+        font-weight: 200;
+    }
+
+
+    .buttons {
+        height: 40dvh;
+        border: 1px solid pink;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .reg-button {
+        height: 60px;
+        width: 170px;
+        border-radius: 30px;
+        border: 1px solid white;
+        font-size: 18pt;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-family: Monsterrat;
+    }
+
+    .log-in-button {
+        height: 60px;
+        width: 170px;
+        border-radius: 30px;
+        border: 1px solid white;
+        font-size: 18pt;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-family: Monsterrat;
+    }
+
+    footer {
+        background-color: blue;
+        height: 100px;
+        color: white;
+    }
+
+}
