@@ -18,6 +18,14 @@
         font-family: Monsterrat;
     }
 
+    #form-register {
+        display: none;
+    }
+
+    #form-log-in {
+        display: none;
+    }
+
     header {
         padding: 10px;
         display: flex;
@@ -57,13 +65,13 @@
     }
 
 
-    .buttons {
+    .buttons button {
         height: 40dvh;
         border: 1px solid pink;
         display: flex;
         align-items: flex-end;
         justify-content: space-around;
-        position: relative;
+        
     }
 
     .reg-button {
@@ -86,10 +94,15 @@
         font-family: Monsterrat;
     }
 
+
+
+
+  
     footer {
         background-color: blue;
         height: 100px;
         color: white;
     }
 
+    
 }

@@ -10,7 +10,7 @@
 
 <body>
 
-    <!-- inkludera sidhuvud -->
+    <!-- HEADER/HERO -->
     <?php include "_includes/header.php"; ?>
 
     <div class="hero">
@@ -20,10 +20,44 @@
             share</p>
     </div>
 
+
+    <!-- BUTTONS -->
     <div class="buttons">
-        <button class="reg-button">get started</button>
-        <button class="log-in-button">log in</button>
+        <button onclick="displayRegForm()">get started</button>
+        <button onclick="displayLogInForm()">log in</button>
     </div>
+
+
+    <!-- FORMS -->
+    <div id="form-register">
+        <form action="" method="post">
+
+            <input type="text"><br>
+
+            <input type="text"><br>
+
+            <input type="text"><br>
+
+            <input type="text"><br>
+
+            <input type="password"><br>
+
+            <input type="password">
+        </form>
+        <button id="sign-up">SIGN UP!</button>
+    </div>
+    
+    <div id="form-log-in">
+        <form action="" method="post">
+
+            <input type="text"><br>
+
+            <input type="password">
+        </form>
+        <button id="log-in">log in</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
