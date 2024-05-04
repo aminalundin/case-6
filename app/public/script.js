@@ -22,6 +22,7 @@ function displayRegForm() {
 
     if (regForm.style.display === "none") {
         regForm.style.display = "block";
+        
     } else {
         regForm.style.display = "none";
     }
