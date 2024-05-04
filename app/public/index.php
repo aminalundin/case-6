@@ -23,39 +23,42 @@
 
     <!-- BUTTONS -->
     <div class="buttons">
-        <button onclick="displayRegForm()">get started</button>
-        <button onclick="displayLogInForm()">log in</button>
+        <button onclick="displayRegForm()" id="reg-button">get started</button>
+        <button onclick="displayLogInForm()" id="reg-button">log in</button>
     </div>
 
 
     <!-- FORMS -->
-    <div id="form-register">
-        <form action="" method="post">
+        <div id="form-register" style="display: none;">
+            <button onclick="displayRegForm()">&#x2715;</button>
+            <form action="" method="post">
 
-            <input type="text"><br>
+                <input type="text"><br>
 
-            <input type="text"><br>
+                <input type="text"><br>
 
-            <input type="text"><br>
+                <input type="text"><br>
 
-            <input type="text"><br>
+                <input type="text"><br>
 
-            <input type="password"><br>
+                <input type="password"><br>
 
-            <input type="password">
-        </form>
-        <button id="sign-up">SIGN UP!</button>
-    </div>
+                <input type="password">
+            </form>
+            <button id="sign-up">SIGN UP!</button>
+        </div>
     
-    <div id="form-log-in">
-        <form action="" method="post">
+        <div id="form-log-in" style="display: none;">
+            <button onclick="displayLogInForm()">&#x2715;</button>
+            <form action="" method="post">
 
-            <input type="text"><br>
+                <input type="text"><br>
 
-            <input type="password">
-        </form>
-        <button id="log-in">log in</button>
-    </div>
+                <input type="password">
+            </form>
+            <button id="log-in">log in</button>
+        </div>
+    
 
     <script src="script.js"></script>
 </body>

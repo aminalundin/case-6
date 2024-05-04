@@ -18,13 +18,9 @@
         font-family: Monsterrat;
     }
 
-    #form-register {
-        display: none;
-    }
 
-    #form-log-in {
-        display: none;
-    }
+  
+
 
     header {
         padding: 10px;
@@ -65,7 +61,7 @@
     }
 
 
-    .buttons button {
+    .buttons {
         height: 40dvh;
         border: 1px solid pink;
         display: flex;
@@ -74,7 +70,7 @@
         
     }
 
-    .reg-button {
+    #reg-button {
         height: 60px;
         width: 170px;
         border-radius: 30px;
@@ -84,7 +80,7 @@
         font-family: Monsterrat;
     }
 
-    .log-in-button {
+    #log-in-button {
         height: 60px;
         width: 170px;
         border-radius: 30px;
