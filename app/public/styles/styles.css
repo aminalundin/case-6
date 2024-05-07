@@ -159,7 +159,6 @@
     .hero {
         padding-top: 30px;
         padding-left: 20px;
-        border: 1px solid blue;
         color: white;
         font-family: Monsterrat;
 
@@ -185,7 +184,6 @@
 
     .buttons {
         height: 40dvh;
-        border: 1px solid pink;
         display: flex;
         align-items: flex-end;
         justify-content: space-around;

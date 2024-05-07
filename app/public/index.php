@@ -1,3 +1,12 @@
+<?php
+declare(strict_types=1);
+
+include "_includes/database_connection.php";
+// include "register.php";
+// include "login.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +44,7 @@
     <div class="container">
         <div id="form-register" style="display: none;">
             <button onclick="displayRegForm()" id="close-reg-tab">&#x2715;</button>
-            <form action="" method="post">
+            <form action="register.php" method="post">
                 <p>name</p>
                 <input type="text"><br>
                 <p>surname</p>
@@ -47,9 +56,9 @@
                 <p>password</p>
                 <input type="password"><br>
                 <p>confirm password</p>
-                <input type="password">
+                <input type="password2">
             </form>
-            <button id="sign-up">SIGN UP!</button>
+            <button type="submit" id="sign-up">SIGN UP!</button>
         </div>
         </div>
         
@@ -57,13 +66,13 @@
         <div class="log-in-container">
         <div id="form-log-in" style="display: none;">
             <button onclick="displayLogInForm()" id="close-log-tab">&#x2715;</button>
-            <form action="" method="post">
+            <form action="login.php" method="post">
                 <p>username</p>
                 <input type="text"><br>
                 <p>password</p>
                 <input type="password">
             </form>
-            <button id="log-in">log in</button>
+            <button type="submit" id="log-in">log in</button>
         </div>
         </div>
     
