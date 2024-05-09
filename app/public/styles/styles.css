@@ -13,7 +13,7 @@
 
     body {
         height: 100dvh;
-        background-image: url(images/home-bg-image.png);
+        background-image: url(images/06.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         font-family: Monsterrat;
@@ -164,23 +164,41 @@
 
     }
 
+    img {
+        width: 200px;
+    }
+    .hero-logo {
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
     .hero-heading {
         color: white;
-        font-size: 64pt;
+        font-size: 20pt;
         padding: 0;
         margin: 0;
         font-family: Monsterrat;
-        font-weight: 600;
+        font-weight: 300;
+        text-align: center;
     }
 
     .hero-content {
         color: white;
         padding-top: 30px;
-        font-size: 18pt;
+        font-size: 16pt;
         font-weight: 200;
     }
 
     /* MAIN */
+
+    .slogan {
+        color: white;
+        font-size: 18pt;
+        font-weight: 300;
+    }
 
     .buttons {
         height: 40dvh;
@@ -195,9 +213,12 @@
         height: 60px;
         width: 170px;
         border-radius: 30px;
-        border: 1px solid white;
+        /* border: 1px solid white; */
+        border: none;
         font-size: 18pt;
-        background-color: rgba(255, 255, 255, 0.5);
+        font-weight: 500;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.0);
         font-family: Monsterrat;
     }
 

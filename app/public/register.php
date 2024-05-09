@@ -2,7 +2,10 @@
 
 include "_includes/database_connection.php";
 
+
 // hantera formulär request for att registrera ny användare
+
+
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
@@ -64,9 +67,6 @@ try {
 
 }
 
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -78,19 +78,13 @@ try {
 </head>
 <body>
 
-            <form action="register.php" method="post">
+            <form action="get" method="post">
                 <p>name</p>
-                <input type="text"><br>
-                <p>surname</p>
-                <input type="text"><br>
-                <p>email</p>
-                <input type="text"><br>
-                <p>username</p>
-                <input type="text"><br>
+                <input type="text" id="username"><br>
                 <p>password</p>
-                <input type="password"><br>
+                <input type="password" id="password"><br>
                 <p>confirm password</p>
-                <input type="password2">
+                <input type="password2" id="password2">
             </form>
             <button type="submit" id="sign-up">SIGN UP!</button>
       

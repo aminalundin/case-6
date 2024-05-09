@@ -1,18 +1,23 @@
 <?php
-$pdo = null;
+// $pdo = null;
 
 $host = "mysql";
 $database = "db_case";
 $user = "db_user";
 $password = "db_password";
 
-
+$options = [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+];
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$database", $user, $password);
+    $pdo = new PDO("mysql:host=$host;dbname=$database", $user, $password, $options);
 } catch (PDOException $e) {
     echo "Database connection exception $e";
 }
+
+$pdo = new PDO("mysql:host=$host;dbname=$database", $user, $password);
 
 // $options = [
 //     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
