@@ -1,0 +1,75 @@
+@media screen and (max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Monsterrat;
+        src: url(fonts/Montserrat-VariableFont_wght.ttf);
+    }
+
+    body {
+        height: 100dvh;
+        background-image: url(images/06.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Monsterrat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+    }
+
+    header {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* SEARCH */
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search {
+        width: 100dvh;
+        height: 50px;
+        border-radius: 30px;
+        width: 250px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.6)
+    }
+
+
+    #discover {
+
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        height: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        overflow: auto;
+
+
+
+    }
+
+    #discover img {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+}
