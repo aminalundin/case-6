@@ -1,7 +1,7 @@
 // DOMS
 const signUp = document.querySelector("button#sign-up");
 const logIn = document.querySelector("button#log-in");
-
+console.log(logIn);
 
 // EVENT LISTENERS - BUTTONS
 

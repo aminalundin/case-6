@@ -1,0 +1,156 @@
+@media screen and (max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Monsterrat;
+        src: url(fonts/Montserrat-VariableFont_wght.ttf);
+    }
+
+    body {
+        font-family: Monsterrat;
+    }
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        position: relative;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* MAIN */
+
+    main {
+        height: 50dvh;
+        background-image: url(images/wine-bar.jpeg);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ASIDE */
+
+    aside {
+        height: 50dvh;
+        background-image: url(images/red-paper.png);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slogan {
+        font-size: 21pt;
+        padding-bottom: 20px;
+        color: #E12C2B;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .content {
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16pt;
+    }
+
+
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 480px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Monsterrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: Monsterrat;
+    display: flex;
+    flex-direction: row;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN */
+
+main {
+    width: 50%;
+    height: 100vh;
+    background-image: url(images/wine-bar.jpeg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ASIDE */
+
+aside {
+    width: 50%;
+    height: 100vh;
+    background-image: url(images/red-paper.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.slogan {
+    font-size: 21pt;
+    padding-bottom: 20px;
+    color: #E12C2B;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16pt;
+}
+}

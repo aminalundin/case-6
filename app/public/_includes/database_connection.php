@@ -1,5 +1,6 @@
 <?php
 // $pdo = null;
+session_start();
 
 $host = "mysql";
 $database = "db_case";
@@ -12,6 +13,7 @@ $options = [
 ];
 
 try {
+    $_SESSION['pdo'];
     $pdo = new PDO("mysql:host=$host;dbname=$database", $user, $password, $options);
 } catch (PDOException $e) {
     echo "Database connection exception $e";
