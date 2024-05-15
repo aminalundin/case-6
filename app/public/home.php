@@ -10,7 +10,7 @@ include "_includes/database_connection.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>make pour decisions</title>
-    <link rel="stylesheet" href="styles/styles-home.css">
+    <link rel="stylesheet" href="styles/home.css">
     <!-- <style>
         @font-face {
             font-family: Monsterrat;

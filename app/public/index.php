@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>make pour decisions</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
-    <!-- <header>
+    <header>
         <a href="register.php">GET STARTED</a>
         <a href="login.php">LOG IN</a>
-    </header> -->
+    </header>
     <main>
         
         <div class="logotype">
@@ -20,8 +20,7 @@
         </div>
     </main>
     <aside>
-        <a href="register.php">GET STARTED</a>
-        <a href="login.php">LOG IN</a>
+        
 
         <p class="slogan"><strike>MAKE POUR DECISIONS</strike></p>
         <p class="content">DISCOVER YOUR NEW FAVOURITE BARS, SHARE

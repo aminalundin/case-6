@@ -19,15 +19,19 @@
 
     header {
         display: flex;
+        height: 100dvh;
+        width: 45dvh;
         justify-content: space-between;
         padding: 10px;
-        position: relative;
+        position: absolute;
         
     }
 
     a {
         text-decoration: none;
-        color: black;
+        color: white;
+        font-size: 18pt;
+        font-weight: 600;
     }
 
     /* MAIN */
@@ -36,7 +40,7 @@
         height: 50dvh;
         background-image: url(images/wine-bar.jpeg);
         background-size: cover;
-        position: relative;
+        /* position: relative; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -100,15 +104,20 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    justify-content: right;
     padding: 10px;
-    position: relative;
+    position: absolute;
     
 }
 
 a {
     text-decoration: none;
-    color: black;
+    padding-right: 40px;
+    color: white;
+    font-size: 14pt;
+    font-weight: 300;
 }
 
 /* MAIN */
@@ -118,7 +127,7 @@ main {
     height: 100vh;
     background-image: url(images/wine-bar.jpeg);
     background-size: cover;
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +140,7 @@ aside {
     height: 100vh;
     background-image: url(images/red-paper.png);
     background-size: cover;
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,6 +154,7 @@ aside {
     color: #E12C2B;
     padding-left: 10px;
     padding-right: 10px;
+    font-weight: 600;
 }
 
 .content {
