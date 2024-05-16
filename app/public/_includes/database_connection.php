@@ -1,11 +1,10 @@
 <?php
-// $pdo = null;
-session_start();
 
+// databas koppling
 $host = "mysql";
 $database = "db_case";
-$user = "db_user";
-$password = "db_password";
+$usern = "db_user";
+$passw = "db_password";
 
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
@@ -13,31 +12,7 @@ $options = [
 ];
 
 try {
-    $_SESSION['pdo'];
-    $pdo = new PDO("mysql:host=$host;dbname=$database", $user, $password, $options);
+    $pdo = new PDO("mysql:host=$host;dbname=$database", $usern, $passw, $options);
 } catch (PDOException $e) {
     echo "Database connection exception $e";
 }
-
-$pdo = new PDO("mysql:host=$host;dbname=$database", $user, $password);
-
-// $options = [
-//     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-//     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-// ];
-
-
-
-// fråga databasen
-// $sql = "SELECT VERSION()";
-
-// svar från databasen
-
-// $query = $pdo->query($sql);
-// $row = $query->fetch();
-
-// print_r($row);
-
-
-
-?>

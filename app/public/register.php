@@ -1,3 +1,82 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    echo "user trying to submit form";
+    var_dump($_POST);
+
+    // hämta data från formuläret
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
+    $password2 = trim($_POST['password2']);
+
+    // kontrollera att fälten inte är tomma
+    if (empty($username) || empty($password) || empty($password2)) {
+        echo "missing values<br>";
+        exit;
+    }
+
+    // kontrollera att lösenorden är samma
+
+    if ($password !== $password2) {
+        echo "lösenorden matchar inte<br>";
+        exit;
+    }
+
+    // kontrollera att användarnamnet inte redan finns
+    include "_includes/database_connection.php";
+
+    try {
+        $sql = "SELECT * FROM users WHERE username = :username";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([
+            ':username' => $username
+        ]);
+
+        // hämtar användare från databasen
+        $user = $stmt->fetch();  
+        
+        if ($user) {
+            echo "användarnamnet finns redan";
+            exit;
+        }
+
+
+        // kryptera lösenord
+        $password_hashed = password_hash($password, PASSWORD_DEFAULT);
+        echo "lösenordet krypterat: $password_hashed<br>";
+    
+    
+        // registrera ny användare i databasen
+
+        $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([
+            ':username' => $username,
+            ':password' => $password_hashed
+
+        ]);
+
+
+    } catch (PDOException $e) {
+        echo "database connection exception";
+    }
+
+
+
+
+    // skicka användaren till login.php
+    header("Location: login.php");
+    exit;
+
+
+}
+
+
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +101,7 @@
 
     <aside>
         <div class="container">
-        <p class="slogan"><strike>REGISTER NEW USER</strike></p>
+            <p class="slogan"><strike>REGISTER NEW USER</strike></p>
 
             <form action="register.php" method="post">
 
@@ -32,15 +111,16 @@
                 <label for="password">PASSWORD</label>
                 <input type="password" name="password" id="password">
 
-                <label for="password">CONFIRM PASSWORD</label>
-                <input type="password" name="password" id="password2">
+                <label for="password2">CONFIRM PASSWORD</label>
+                <input type="password" name="password2" id="password2">
+
+                <button type="submit">SIGN UP</button>
             </form>
-            <button type="submit" id="sign-up">SIGN UP</button>
         </div>
 
-        <div class="image">
+        <!-- <div class="image">
             <img src="styles/images/wine-glass.png" alt="illustration of wine glass" width="200px">
-        </div>
+        </div> -->
     </aside>
 </body>
 
