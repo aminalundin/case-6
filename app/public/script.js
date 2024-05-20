@@ -1,17 +1,14 @@
 // DOMS
 const menu = document.querySelector("button#menu-button");
-// const logIn = document.querySelector("button#log-in");
+
 
 // EVENT LISTENERS - BUTTONS
-
 
 menu.addEventListener("click", function (event) {
     console.log("click");
 });
 
-// logIn.addEventListener("click", function (event) {
-//     console.log("click");
-// });
+
 
 // FUNCTIONS
 

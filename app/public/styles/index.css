@@ -19,7 +19,7 @@
         width: 50px;
         background-color: transparent;
         border: none;
-         color: white;
+        color: white;
     }
 
     nav {
@@ -42,7 +42,6 @@
         text-decoration: none;
         color: white;
         font-size: 22pt;
-        
     }
 
     li {
@@ -54,8 +53,6 @@
 
     header {
         display: flex;
-        /* height: 100dvh;
-        width: 45dvh; */
         justify-content: space-between;
         padding: 10px;
         position: absolute;
@@ -110,8 +107,6 @@
         padding-right: 50px;
         font-size: 16pt;
     }
-
-
 }
 
 
@@ -119,98 +114,79 @@
 
 @media screen and (min-width: 480px) {
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-@import url("https://use.typekit.net/hlg0mdj.css");
+    @import url("https://use.typekit.net/hlg0mdj.css");
 
-body {
-    font-family: "forma-djr-mono", sans-serif;
-    font-weight: 200;
-    display: flex;
-    flex-direction: row;
-}
+    body {
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+        display: flex;
+        flex-direction: row;
+    }
 
-/* HEADER */
+    /* HEADER */
 
-header {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    justify-content: right;
-    padding: 10px;
-    position: absolute;
-    
-}
+    header {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        justify-content: right;
+        padding: 10px;
+        position: absolute;
+    }
 
-a {
-    text-decoration: none;
-    padding-right: 40px;
-    color: white;
-    font-size: 14pt;
-    font-weight: 300;
-}
+    a {
+        text-decoration: none;
+        padding-right: 40px;
+        color: white;
+        font-size: 14pt;
+        font-weight: 300;
+    }
 
-/* MAIN */
+    /* MAIN */
 
-main {
-    width: 50%;
-    height: 100vh;
-    background-image: url(images/wine-bar.jpeg);
-    background-size: cover;
-    /* position: relative; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    main {
+        width: 50%;
+        height: 100vh;
+        background-image: url(images/wine-bar.jpeg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-/* ASIDE */
+    /* ASIDE */
 
-aside {
-    width: 50%;
-    height: 100vh;
-    background-image: url(images/red-paper.png);
-    background-size: cover;
-    /* position: relative; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
+    aside {
+        width: 50%;
+        height: 100vh;
+        background-image: url(images/red-paper.png);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
 
-/* .slogan {
-    font-size: 21pt;
-    padding-bottom: 20px;
-    color: #E12C2B;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 600;
-} */
+    .slogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.slogan {
-    /* font-size: 21pt;
-    padding-bottom: 20px;
-    color: #E12C2B;
-    padding-left: 10px;
-    padding-right: 10px; */
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .slogan img {
+        width: 350px;
+    }
 
-.slogan img {
-    width: 350px;
-    /* padding-bottom: 50px; */
-}
-
-.content {
-    color: white;
-    padding: 20px;
-    font-size: 16pt;
-}
+    .content {
+        color: white;
+        padding: 20px;
+        font-size: 16pt;
+    }
 }

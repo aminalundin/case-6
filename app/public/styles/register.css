@@ -1,12 +1,10 @@
 @media screen and (max-width: 480px) {
 
- 
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-
 
     @import url("https://use.typekit.net/hlg0mdj.css");
 
@@ -35,7 +33,6 @@
         text-decoration: none;
         color: white;
         font-size: 22pt;
-        
     }
 
     li {
@@ -47,8 +44,6 @@
 
     header {
         display: flex;
-        /* height: 100dvh;
-        width: 45dvh; */
         justify-content: space-between;
         padding: 10px;
         position: absolute;
@@ -66,8 +61,10 @@
         width: 50px;
         background-color: transparent;
         border: none;
-         color: white;
+        color: white;
     }
+
+
     /* MAIN */
 
     main {
@@ -86,7 +83,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* position: absolute; */
     }
 
     /* ASIDE */
@@ -100,7 +96,6 @@
         justify-content: center;
         flex-direction: column;
         text-align: left;
-        padding-top: 0px;
     }
 
     .slogan {
@@ -120,9 +115,9 @@
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
     }
+
     form {
         display: flex;
-        /* position: relative; */
         flex-direction: column;
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
@@ -144,7 +139,6 @@
 
     label {
         padding-bottom: 20px;
-        /* padding-top: 20px; */
         color: white;
         font-size: 16pt;
         font-family: "forma-djr-mono", sans-serif;
@@ -161,7 +155,6 @@
         color: white;
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
-        
     }
 
     .image {
@@ -185,17 +178,13 @@
     }
 
     @import url("https://use.typekit.net/hlg0mdj.css");
-    
+
     body {
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
         display: flex;
         flex-direction: row;
     }
-    
-
-
-  
 
     /* HEADER */
     header {
@@ -205,7 +194,6 @@
         justify-content: right;
         padding: 10px;
         position: absolute;
-
     }
 
     a {
@@ -228,11 +216,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /* position: relative; */
     }
-
-
-   
 
     /* ASIDE */
 
@@ -278,7 +262,6 @@
         border-right: none;
         color: white;
         font-size: 14pt;
-        /* font-family: Monsterrat; */
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
     }
@@ -303,7 +286,6 @@
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
         padding-top: 20px;
-
     }
 
     .image {

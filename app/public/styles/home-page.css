@@ -8,7 +8,7 @@
 
 
     @import url("https://use.typekit.net/hlg0mdj.css");
-   
+
 
     body {
         font-family: "forma-djr-mono", sans-serif;
@@ -24,7 +24,6 @@
         justify-content: space-between;
         padding: 10px;
         position: absolute;
-
     }
 
     a {
@@ -105,7 +104,7 @@
     }
 
     @import url("https://use.typekit.net/hlg0mdj.css");
-   
+
 
     body {
         font-family: "forma-djr-mono", sans-serif;
@@ -122,7 +121,6 @@
         justify-content: right;
         padding: 10px;
         position: absolute;
-
     }
 
     a {
@@ -143,11 +141,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /* position: relative; */
     }
-
-
-   
 
     /* ASIDE */
 
@@ -191,7 +185,6 @@
         border-right: none;
         color: white;
         font-size: 14pt;
-        font-family: Monsterrat;
     }
 
     label {
@@ -209,7 +202,6 @@
         font-size: 16pt;
         color: white;
         text-align: right;
-
     }
 
     .image {
@@ -217,6 +209,7 @@
         position: absolute;
         padding-top: 300px;
     }
+
     .info-text {
         display: flex;
         padding: 3rem;
