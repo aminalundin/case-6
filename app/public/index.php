@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <!-- <header>
-        <a href="register.php">GET STARTED</a>
-        <a href="login.php">LOG IN</a>
-    </header> -->
-    <?php  include "_includes/header.php"; ?>
+    <header>
+    <button onclick="displayMenu()" id="menu-button">menu</button>
+    </header>
+    
+    <?php  include "_includes/menu.php"; ?> 
     
     <main>
         
@@ -31,8 +31,11 @@
             YOUR RECOMMENDATIONS,
             OWNER?
             PUT YOURS ON THE LIST</p>
+           
 
     </aside>
+
+   <script src="script.js"></script>
 </body>
 
 </html>

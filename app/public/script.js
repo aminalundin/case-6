@@ -1,43 +1,42 @@
 // DOMS
-const signUp = document.querySelector("button#sign-up");
-const logIn = document.querySelector("button#log-in");
-console.log(logIn);
+const menu = document.querySelector("button#menu-button");
+// const logIn = document.querySelector("button#log-in");
 
 // EVENT LISTENERS - BUTTONS
 
 
-signUp.addEventListener("click", function (event) {
+menu.addEventListener("click", function (event) {
     console.log("click");
 });
 
-logIn.addEventListener("click", function (event) {
-    console.log("click");
-});
+// logIn.addEventListener("click", function (event) {
+//     console.log("click");
+// });
 
 // FUNCTIONS
 
-function displayRegForm() {
-    let regForm = document.getElementById("form-register");
+function displayMenu() {
+    let burgerMenu = document.getElementById("burger_menu");
 
 
-    if (regForm.style.display === "none") {
-        regForm.style.display = "block";
+    if (burgerMenu.style.display === "none") {
+        burgerMenu.style.display = "block";
         
     } else {
-        regForm.style.display = "none";
+        burgerMenu.style.display = "none";
     }
 }
 
-function displayLogInForm() {
-    let logInForm = document.getElementById("form-log-in");
+// function displayLogInForm() {
+//     let logInForm = document.getElementById("form-log-in");
 
 
-    if (logInForm.style.display === "none") {
-        logInForm.style.display = "block";
-    } else {
-        logInForm.style.display = "none";
-    }
-}
+//     if (logInForm.style.display === "none") {
+//         logInForm.style.display = "block";
+//     } else {
+//         logInForm.style.display = "none";
+//     }
+// }
 
 
 // const registerButton = document.querySelector("button#reg-button");

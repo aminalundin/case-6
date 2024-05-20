@@ -71,7 +71,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-<?php  include "_includes/header.php"; ?>
+<header>
+    <button onclick="displayMenu()" id="menu-button">menu</button>
+    </header>
+    
+    <?php  include "_includes/menu.php"; ?> 
     <main>
 
         <div class="logotype">
@@ -99,6 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <img src="styles/images/wine-glass.png" alt="illustration of wine glass" width="200px">
         </div> -->
     </aside>
+    <script src="script.js"></script>
 </body>
 
 </html>
