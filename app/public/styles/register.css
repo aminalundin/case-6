@@ -106,7 +106,7 @@
     }
 
     .slogan img {
-        width: 350px;
+        width: 300px;
         padding-bottom: 50px;
     }
 
@@ -135,14 +135,16 @@
         font-size: 14pt;
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
+        padding-bottom: 20px;
     }
 
     label {
-        padding-bottom: 20px;
+        /* padding-bottom: 20px; */
         color: white;
         font-size: 16pt;
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
+        padding-top: 20px;
     }
 
     form button {
@@ -155,6 +157,7 @@
         color: white;
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
+        padding-top: 30px;
     }
 
     .image {

@@ -19,17 +19,17 @@
         </div>
     </main>
     <aside>
+    <div class="slogan"><img src="styles/images/slogan.png" alt="" width="350px"></div>
         <div class="aside-content">
-        <p class="slogan"><strike>MAKE POUR DECISIONS</strike></p>
+        
         <div class="info-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi saepe, necessitatibus in quia
-                alias rerum
-                ipsam laborum vitae! Similique temporibus accusantium reiciendis quae repudiandae quidem quasi, saepe
-                esse.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi saepe, necessitatibus in quia
-                alias rerum ipsam laborum vitae! Similique temporibus accusantium reiciendis quae repudiandae quidem
-                quasi, saepe esse.</p>
+            <p>Welcome to Pour, the ultimate app for discovering the best wine bars in your city. 
+                Whether you're a wine enthusiast seeking new places to explore or a business owner wanting to list your own wine bar, 
+                Pour is here to help.</p> <br>
+                <p>Our user-friendly platform allows you to browse, view photos, 
+                and find the perfect spot for your next wine-tasting adventure. For wine bar owners, 
+                our app offers a simple way to add your business and reach a community of passionate wine lovers. 
+                </p>
 
                 </div>
         </div>

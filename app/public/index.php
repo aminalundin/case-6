@@ -27,11 +27,13 @@
     <aside>
 
         <div class="slogan"><img src="styles/images/slogan.png" alt=""></div>
-        <p class="content">DISCOVER YOUR NEW FAVOURITE BARS, SHARE
-            YOUR RECOMMENDATIONS,
-            OWNER?
-            PUT YOURS ON THE LIST</p>
+        <p class="content">WELCOME TO POUR,THE ULTIMATE APP FOR DISCOVERING THE BEST WINE BARS IN YOUR AREA</p><br>
+
+        <p class="content"> JOIN POUR TODAY AND ELEVATE YOUR WINE EXPERIENCE, ONE GLASS AT A TIME!</p>
+
+        </p>
     </aside>
+    <!-- <?php include "_includes/footer.php"?> -->
 
     <script src="script.js"></script>
 </body>

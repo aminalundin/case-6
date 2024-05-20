@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </main>
 
     <aside>
-        <div class="slogan"><img src="styles/images/register.png" alt="" width="350px"></div>
+        <div class="slogan"><img src="styles/images/register.png" alt="" width="300px"></div>
         <div class="container">
 
             <form action="register.php" method="post">

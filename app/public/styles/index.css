@@ -103,10 +103,18 @@
 
     .content {
         color: white;
-        padding-left: 50px;
-        padding-right: 50px;
+       padding: 0;
         font-size: 16pt;
     }
+
+    /* footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       
+        
+    } */
 }
 
 
@@ -178,6 +186,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 20px;
     }
 
     .slogan img {
@@ -186,7 +195,8 @@
 
     .content {
         color: white;
-        padding: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
         font-size: 16pt;
     }
 }

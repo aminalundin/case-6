@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     include "_includes/database_connection.php";
 
     try {
-        $sql = "SELECT * FROM `business` WHERE name = :name";
+        $sql = "SELECT * FROM business WHERE name = :name";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
             ':name' => $name
@@ -34,11 +34,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
         // registrera nytt företag i databasen
-        $sql = "INSERT INTO `business` (name, address) VALUES (:name, :address)";
+        $sql = "INSERT INTO business (name, address) VALUES (:name, :address)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
             ':name' => $name,
-            ':address' => $address,
+            ':address' => $address
             // ':open_hours' => $open
         ]);
 
@@ -101,6 +101,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </body>
 
 </html>
+
+why is my input values not uploading to the database?
 <!-- 
 <!DOCTYPE html>
 <html lang="en">
