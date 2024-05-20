@@ -23,6 +23,14 @@
         position: absolute;
     }
 
+    nav button {
+        width: 10px;
+        height: 30px;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
     li a {
         text-decoration: none;
         color: white;
@@ -51,6 +59,14 @@
         color: white;
         font-size: 18pt;
         font-weight: 300;
+    }
+
+    header button {
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        border: none;
+         color: white;
     }
     /* MAIN */
 
