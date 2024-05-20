@@ -6,13 +6,13 @@
         box-sizing: border-box;
     }
 
-    @font-face {
-        font-family: Monsterrat;
-        src: url(fonts/Montserrat-VariableFont_wght.ttf);
-    }
+
+    @import url("https://use.typekit.net/hlg0mdj.css");
+   
 
     body {
-        font-family: Monsterrat;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
     }
 
     /* HEADER */
@@ -75,8 +75,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-
     }
+
     .slogan {
         font-size: 21pt;
         padding-bottom: 50px;
@@ -90,6 +90,7 @@
         position: absolute;
         padding-top: 300px;
     }
+
 }
 
 
@@ -103,13 +104,12 @@
         box-sizing: border-box;
     }
 
-    @font-face {
-        font-family: Monsterrat;
-        src: url(fonts/Montserrat-VariableFont_wght.ttf);
-    }
+    @import url("https://use.typekit.net/hlg0mdj.css");
+   
 
     body {
-        font-family: Monsterrat;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
         display: flex;
         flex-direction: row;
     }

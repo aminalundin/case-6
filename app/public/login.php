@@ -57,23 +57,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } catch (PDOException $e) {
         echo "database connection exception";
     }
-
-
-
-
-
-
 }
-
-
-
-
-
-
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -82,14 +67,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>log in</title>
-    <!-- <link rel="stylesheet" href="styles/register.css"> -->
+    <link rel="stylesheet" href="styles/register.css">
 </head>
 
 <body>
-    <header>
-        <a href="register.php">GET STARTED</a>
-        <a href="login.php">LOG IN</a>
-    </header>
+<?php  include "_includes/header.php"; ?>
     <main>
 
         <div class="logotype">

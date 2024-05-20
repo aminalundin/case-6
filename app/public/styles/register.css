@@ -35,49 +35,112 @@
     /* MAIN */
 
     main {
-        height: 50dvh;
+        height: 30dvh;
         background-image: url(images/wine-bar.jpeg);
         background-size: cover;
-        /* position: relative; */
+        display: flex;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+    }
+
+    .logotype {
+        height: 100dvh;
+        width: 45dvh;
+        padding-bottom: 350px;
         display: flex;
         justify-content: center;
         align-items: center;
+        /* position: absolute; */
     }
 
     /* ASIDE */
 
     aside {
-        height: 50dvh;
-        background-image: url(images/red-paper.png);
+        height: 70dvh;
+        background-image: url(images/06.jpg);
         background-size: cover;
-        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        text-align: center;
-        padding: 3rem;
+        text-align: left;
+        padding-top: 0px;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200; 
     }
 
     .slogan {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+        padding-top: 50px;
     }
 
     .slogan img {
         width: 350px;
         padding-bottom: 50px;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
     }
 
-    .content {
+
+    .container {
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+    }
+    form {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+    }
+
+    input {
+        width: 300px;
+        height: 50px;
+        background: transparent;
+        border-bottom: 1px solid white;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         color: white;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 16pt;
+        font-size: 14pt;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
     }
 
+    label {
+        padding-bottom: 20px;
+        /* padding-top: 20px; */
+        color: white;
+        font-size: 16pt;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+    }
 
+    button {
+        width: 300px;
+        height: 50px;
+        border: none;
+        font-size: 18pt;
+        text-align: right;
+        background: transparent;
+        color: white;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+        
+    }
+
+    .image {
+        display: flex;
+        position: absolute;
+        padding-top: 300px;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+    }
 }
 
 
@@ -85,98 +148,137 @@
 
 @media screen and (min-width: 480px) {
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-@import url("https://use.typekit.net/hlg0mdj.css");
-
-body {
-    font-family: "forma-djr-mono", sans-serif;
-    font-weight: 200;
-    display: flex;
-    flex-direction: row;
-}
-
-/* HEADER */
-
-header {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    justify-content: right;
-    padding: 10px;
-    position: absolute;
+    @import url("https://use.typekit.net/hlg0mdj.css");
     
-}
+    body {
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+        display: flex;
+        flex-direction: row;
+    }
+    
 
-a {
-    text-decoration: none;
-    padding-right: 40px;
-    color: white;
-    font-size: 14pt;
-    font-weight: 300;
-}
 
-/* MAIN */
+  
 
-main {
-    width: 50%;
-    height: 100vh;
-    background-image: url(images/wine-bar.jpeg);
-    background-size: cover;
-    /* position: relative; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    /* HEADER */
+    header {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        justify-content: right;
+        padding: 10px;
+        position: absolute;
 
-/* ASIDE */
+    }
 
-aside {
-    width: 50%;
-    height: 100vh;
-    background-image: url(images/red-paper.png);
-    background-size: cover;
-    /* position: relative; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
+    a {
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        padding-right: 40px;
+        color: white;
+        font-size: 14pt;
+        font-weight: 300;
+    }
 
-/* .slogan {
-    font-size: 21pt;
-    padding-bottom: 20px;
-    color: #E12C2B;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 600;
-} */
+    /* MAIN */
 
-.slogan {
-    /* font-size: 21pt;
-    padding-bottom: 20px;
-    color: #E12C2B;
-    padding-left: 10px;
-    padding-right: 10px; */
+    main {
+        height: 100vh;
+        width: 50%;
+        background-image: url(images/wine-bar.jpeg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* position: relative; */
+    }
+
+
    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.slogan img {
-    width: 350px;
-    /* padding-bottom: 50px; */
-}
+    /* ASIDE */
 
-.content {
-    color: white;
-    padding: 20px;
-    font-size: 16pt;
-}
+    aside {
+        height: 100vh;
+        width: 50%;
+        background-image: url(images/06.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+    }
+
+    .slogan {
+        font-size: 21pt;
+        padding-bottom: 20px;
+        color: #E12C2B;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+    }
+
+    form {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 20px;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+    }
+
+    input {
+        width: 300px;
+        height: 40px;
+        background: transparent;
+        border-bottom: 1px solid white;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: white;
+        font-size: 14pt;
+        /* font-family: Monsterrat; */
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+    }
+
+    label {
+        padding-bottom: 10px;
+        padding-top: 15px;
+        color: white;
+        font-size: 14pt;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+    }
+
+    button {
+        width: 300px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        font-size: 16pt;
+        color: white;
+        text-align: right;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+        padding-top: 20px;
+
+    }
+
+    .image {
+        display: flex;
+        position: absolute;
+        padding-top: 300px;
+    }
 }

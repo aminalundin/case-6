@@ -84,16 +84,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>make pour decisions</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/register.css">
     <link rel="stylesheet" href="https://use.typekit.net/hlg0mdj.css">
     
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <a href="register.php">GET STARTED</a>
         <a href="login.php">LOG IN</a>
-    </header>
+    </header> -->
+    <?php  include "_includes/header.php"; ?>
     <main>
 
         <div class="logotype">

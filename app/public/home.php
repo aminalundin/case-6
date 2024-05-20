@@ -6,19 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>make pour decisions</title>
     <link rel="stylesheet" href="styles/home-page.css">
-    <!-- <style>
-        @font-face {
-            font-family: Monsterrat;
-            src: url(fonts/Montserrat-VariableFont_wght.ttf);
-        }
-    </style> -->
+    <link rel="stylesheet" href="https://use.typekit.net/hlg0mdj.css">
+  
 </head>
 
 <body>
-    <!-- <header>
-        <a href="register.php">GET STARTED</a>
-        <a href="login.php">LOG IN</a>
-    </header> -->
+  
 
     <main>
         <div class="logotype">
