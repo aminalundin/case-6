@@ -15,23 +15,56 @@
         font-weight: 200;
     }
 
+    button {
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+
+    nav {
+        padding: 20px;
+        background-color: #E12C2B;
+        width: 80%;
+        height: 100dvh;
+        position: absolute;
+    }
+
+    nav button {
+        width: 10px;
+        height: 30px;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
+    li a {
+        text-decoration: none;
+        color: white;
+        font-size: 22pt;
+    }
+
+    li {
+        padding-top: 30px;
+        list-style: none;
+    }
+
+
     /* HEADER */
 
     header {
         display: flex;
-        height: 100dvh;
-        width: 45dvh;
-        justify-content: space-between;
         padding: 10px;
         position: absolute;
     }
 
-    a {
+    /* a {
         text-decoration: none;
         color: white;
         font-size: 18pt;
         font-weight: 600;
-    }
+    } */
 
     /* MAIN */
 

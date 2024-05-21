@@ -7,11 +7,17 @@
     <title>make pour decisions</title>
     <link rel="stylesheet" href="styles/home-page.css">
     <link rel="stylesheet" href="https://use.typekit.net/hlg0mdj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 </head>
 
 <body>
-  
+<?php include "_includes/logged_in_menu.php"; ?>
+<header>
+        <button onclick="displayMenu()" id="menu-button"><i class="fa-solid fa-bars fa-2xl"></i></button>
+    </header>
 
     <main>
         <div class="logotype">
@@ -40,7 +46,7 @@
         <button class="sign_out">SIGN OUT</button>
         <a href="">WHY POUR?</a>
     </footer> -->
-
+    <script src="script.js"></script>
 </body>
 
 </html>

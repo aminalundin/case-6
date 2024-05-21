@@ -1,9 +1,200 @@
 @media screen and (max-width: 480px) {
 
-    #gallery {
-        background-color: blue;
-        width: 200px;
-        height: 200px;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
+
+    @import url("https://use.typekit.net/hlg0mdj.css");
+
+    body {
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+    }
+
+    button {
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+
+    nav {
+        padding: 20px;
+        background-color: #E12C2B;
+        width: 80%;
+        height: 100dvh;
+        position: absolute;
+    }
+
+    nav button {
+        width: 10px;
+        height: 30px;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
+    li a {
+        text-decoration: none;
+        color: white;
+        font-size: 22pt;
+    }
+
+    li {
+        padding-top: 30px;
+        list-style: none;
+    }
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        position: absolute;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 18pt;
+        font-weight: 300;
+    }
+
+    /* MAIN */
+
+    main {
+        height: 50dvh;
+        background-image: url(images/wine-bar.jpeg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ASIDE */
+
+    aside {
+        height: 50dvh;
+        background-image: url(images/red-paper.png);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .slogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slogan img {
+        width: 350px;
+        padding-bottom: 50px;
+    }
+
+    .content {
+        color: white;
+       padding: 0;
+        font-size: 16pt;
+    }
+
+    /* footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       
+        
+    } */
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @import url("https://use.typekit.net/hlg0mdj.css");
+
+    body {
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        justify-content: right;
+        padding: 10px;
+        position: absolute;
+    }
+
+    a {
+        text-decoration: none;
+        padding-right: 40px;
+        color: white;
+        font-size: 14pt;
+        font-weight: 300;
+    }
+
+    /* MAIN */
+
+    main {
+        width: 30%;
+        height: 100vh;
+        background-image: url(images/wine-bar.jpeg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ASIDE */
+
+    aside {
+        width: 70%;
+        height: 100vh;
+        background-image: url(images/06.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .slogan img {
+        width: 350px;
+    }
+
+    .content {
+        color: white;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 16pt;
+    }
 }
