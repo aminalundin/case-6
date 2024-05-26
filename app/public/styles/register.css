@@ -110,6 +110,10 @@
         padding-bottom: 50px;
     }
 
+    .slogan-2 img {
+        width: 180px;
+        padding-bottom: 50px;
+    }
 
     .container {
         font-family: "forma-djr-mono", sans-serif;
@@ -121,6 +125,19 @@
         flex-direction: column;
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
+    }
+
+    input#edits {
+        width: 300px;
+        height: 50px;
+        background: transparent;
+        border: none;
+        text-align: right;
+        font-size: 20pt;
+        color: white;
+        font-family: "forma-djr-mono", sans-serif;
+        font-weight: 200;
+
     }
 
     input {
@@ -166,6 +183,23 @@
         padding-top: 300px;
         font-family: "forma-djr-mono", sans-serif;
         font-weight: 200;
+    }
+
+    ul#result {
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    ul#result li {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+    }
+
+    h1 {
+        color: white;
     }
 }
 

@@ -33,7 +33,6 @@
 
         </p>
     </aside>
-    <!-- <?php include "_includes/footer.php"?> -->
 
     <script src="script.js"></script>
 </body>

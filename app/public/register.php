@@ -1,7 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    echo "user trying to submit form";
-    var_dump($_POST);
+
 
     // hämta data från formuläret
     $username = trim($_POST['username']);
@@ -108,9 +107,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </form>
         </div>
 
-        <!-- <div class="image">
-            <img src="styles/images/wine-glass.png" alt="illustration of wine glass" width="200px">
-        </div> -->
     </aside>
     <script src="script.js"></script>
 </body>

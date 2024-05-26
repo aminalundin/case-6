@@ -73,17 +73,18 @@
         background-image: url(images/wine-bar.jpeg);
         background-size: cover;
         display: flex;
-        position: relative;
+        justify-content: center;
+        align-items: center;
     }
 
     .logotype {
         height: 100dvh;
         width: 45dvh;
-        padding-bottom: 350px;
+        /* padding-bottom: 350px; */
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        /* position: absolute; */
     }
 
     /* ASIDE */

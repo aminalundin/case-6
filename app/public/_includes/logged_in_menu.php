@@ -4,6 +4,7 @@
             <li><a href="home.php">HOME</a></li>
             <li><a href="share.php">ADD YOUR BAR</a></li>
             <li><a href="discover.php">DISCOVER</a></li>
-            <li><a href="">LOG OUT</a></li>
+            <li><a href="account.php">MY ACCOUNT</a></li>
+            <li><a href="logout.php">LOG OUT</a></li>
         </ul>
     </nav>

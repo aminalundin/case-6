@@ -13,60 +13,56 @@
 </head>
 
 <body>
-<header>
+    <header>
         <button onclick="displayMenu()" id="menu-button"><i class="fa-solid fa-bars fa-2xl"></i></button>
     </header>
 
-<?php include "_includes/logged_in_menu.php"; ?>
+    <?php include "_includes/logged_in_menu.php"; ?>
 
-<main>
-<div class="logotype">
+    <main>
+        <div class="logotype">
             <img src="styles/images/logotype.png" width="300px" alt="logotype">
         </div>
-</main>
-<aside>
+    </main>
+    <aside>
 
-    <form action="discover.php" method="post">
-        <input id="search" type="search" name="search" placeholder="search..">
+        <form action="discover.php" method="post">
+            <input id="search" type="search" name="search">
 
-        <button type="submit">search</button>
+            <button type="submit">SEARCH</button>
 
-    </form>
-<?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $name = trim($_POST['search']);
+        </form>
+        <?php
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $name = trim($_POST['search']);
 
-        include "_includes/database_connection.php";
+            include "_includes/database_connection.php";
 
-        try {
-            // Use a prepared statement to prevent SQL injection
-            $sql = "SELECT `name`, `address` FROM `business` WHERE `name` LIKE :name";
-            $stmt = $pdo->prepare($sql);
-            $stmt->execute([':name' => '%' . $name . '%']);
-            $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            try {
+                $sql = "SELECT `name`, `address` FROM `business` WHERE `name` LIKE :name";
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([':name' => '%' . $name . '%']);
+                $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            if ($rows) {
-                echo "<div id='results'>";
-                foreach ($rows as $row) {
-                    echo "<div class='result'>";
-                    echo "<h2>" . htmlspecialchars($row['name']) . "</h2>";
-                    echo "<p>" . htmlspecialchars($row['address']) . "</p>";
+                if ($rows) {
+                    echo "<div id='results'>";
+                    foreach ($rows as $row) {
+                        echo "<div class='result'>";
+                        echo "<h2>" . htmlspecialchars($row['name']) . "</h2>";
+                        echo "<p>" . htmlspecialchars($row['address']) . "</p>";
+
+                        echo "</div>";
+                    }
                     echo "</div>";
+                } else {
+                    echo "<p>No results found for '" . htmlspecialchars($name) . "'</p>";
                 }
-                echo "</div>";
-            } else {
-                echo "<p>No results found for '" . htmlspecialchars($name) . "'</p>";
+            } catch (PDOException $e) {
+                echo "Database connection exception: $e";
             }
-        } catch (PDOException $e) {
-            echo "Database connection exception: $e";
         }
-    }
-    ?>
+        ?>
     </aside>
-<!-- 
-    <div class="result">
-        hej
-    </div> -->
     <script src="script.js"></script>
 </body>
 

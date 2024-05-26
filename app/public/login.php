@@ -62,6 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>log in</title>
     <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hlg0mdj.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -81,8 +82,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </main>
 
     <aside>
+
+        <div class="slogan-2"><img src="styles/images/welcome.png" alt="" width="100px"></div>
         <div class="container">
-            <p class="slogan"><strike>WELCOME BACK</strike></p>
+
 
             <form action="login.php" method="post">
 
@@ -95,10 +98,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <button type="submit">LOG IN</button>
             </form>
         </div>
-
-        <!-- <div class="image">
-            <img src="styles/images/wine-glass.png" alt="illustration of wine glass" width="200px">
-        </div> -->
     </aside>
     <script src="script.js"></script>
 </body>
