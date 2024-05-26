@@ -1,17 +1,22 @@
-# Case-PHP-MySQL-Template
+# Pour user guide
 
-Template to code PHP and MySQL. Make sure you have Docker Desktop appliaction installed and running.
+Se till att du har igång Docker Desktop i bakgrunden.
 
-Open terminal in this root folder, enter command:
+Öppna terminalen och skriv in följande kommandon för att komma igång:
 
-`docker-desktop up`;
+Tar bort allt lokalt från Docker:
+`docker system prune`
 
-Application should start after a while - check errors. If errors indicate port conflicts, change the port in docker-compose.yml. You should only change the port outside (the number on the left side)
+För att starta ett nytt projekt och få en docker-compose fil:
+`docker-compose up`
+
+Klona ner git repot från:
+`https://github.com/aminalundin/case-6.git`
+
+Ange sedan denna adressen i din webbläsare för att komma igång:
+`http://localhost:8060/setup.php`
+
+När du fått meddelandet "Database setup complete" gå då till startsidan för att börja:
+`http://localhost:8060/index.php`
 
 
-**8060**:80
-
-
-Open a browser and visit:
-
-`http://locahost://8060`
