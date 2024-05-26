@@ -13,8 +13,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="mobile-header">
         <button onclick="displayMenu()" id="menu-button"><i class="fa-solid fa-bars fa-2xl"></i></button>
+    </header>
+
+    <header class="desktop-header">
+        <a href="home.php">HOME</a>
+        <a href="share.php">ADD YOUR BAR</a>
+        <a href="discover.php">DISCOVER</a>
+        <a href="account.php">MY ACCOUNT</a>
+        <a href="logout.php">LOG OUT</a>
     </header>
 
     <?php include "_includes/logged_in_menu.php"; ?>

@@ -76,8 +76,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-    <header>
+    <header class="mobile-header">
         <button onclick="displayMenu()" id="menu-button"><i class="fa-solid fa-bars fa-2xl"></i></button>
+    </header>
+
+    <header class="desktop-header">
+        <a href="index.php">HOME</a>
+        <a href="register.php">REGISTER</a>
+        <a href="login.php">LOG IN</a>
     </header>
 
     <?php include "_includes/menu.php"; ?>

@@ -15,8 +15,16 @@
 
 <body>
     <?php include "_includes/logged_in_menu.php"; ?>
-    <header>
+    <header class="mobile-header">
         <button onclick="displayMenu()" id="menu-button"><i class="fa-solid fa-bars fa-2xl"></i></button>
+    </header>
+
+    <header class="desktop-header">
+        <a href="home.php">HOME</a>
+        <a href="share.php">ADD YOUR BAR</a>
+        <a href="discover.php">DISCOVER</a>
+        <a href="account.php">MY ACCOUNT</a>
+        <a href="logout.php">LOG OUT</a>
     </header>
 
     <main>
@@ -29,13 +37,14 @@
         <div class="aside-content">
 
             <div class="info-text">
-                <p>Welcome to Pour, the ultimate app for discovering the best wine bars in your city.
-                    Whether you're a wine enthusiast seeking new places to explore or a business owner wanting to list
-                    your own wine bar,
+                <p>Welcome to Pour, the ultimate app for discovering the best bars in your city.
+                    Whether you're a wine enthusiast, cocktail lover or a business owner wanting to list
+                    your own bar,
                     Pour is here to help.</p> <br>
                 <p>Our user-friendly platform allows you to browse, view photos,
-                    and find the perfect spot for your next wine-tasting adventure. For wine bar owners,
-                    our app offers a simple way to add your business and reach a community of passionate wine lovers.
+                    and find the perfect spot for your next adventure. For bar owners,
+                    our app offers a simple way to add your business and reach our growing community of dedicated
+                    enthusiasts.
                 </p>
 
             </div>

@@ -42,13 +42,14 @@
 
     /* HEADER */
 
-    header {
-        display: flex;
-        justify-content: space-between;
+    .mobile-header {
         padding: 10px;
         position: absolute;
     }
 
+    .desktop-header {
+        display: none;
+    }
     a {
         text-decoration: none;
         color: white;
@@ -56,7 +57,7 @@
         font-weight: 300;
     }
 
-    header button {
+    .mobile-header button {
         height: 50px;
         width: 50px;
         background-color: transparent;
@@ -224,13 +225,16 @@
     }
 
     /* HEADER */
-    header {
+    .desktop-header {
         display: flex;
         height: 100vh;
         width: 100%;
         justify-content: right;
         padding: 10px;
         position: absolute;
+    }
+    .mobile-header {
+        display: none;
     }
 
     a {

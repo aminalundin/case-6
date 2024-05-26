@@ -10,7 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $address = trim($_POST['address']);
     $hours = trim($_POST['hours']);
     $category = filter_input(INPUT_POST, 'bars', FILTER_VALIDATE_INT);
-    echo "name: $name address: $address hours: $hours category: $category";
 
     if (empty($name) || empty($address) || empty($hours) || empty($category)) {
         echo "Missing values<br>";
@@ -28,15 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             exit;
         }
 
-
         if (!empty($_FILES['file']['name'])) {
             $target_dir = "uploads/";
             $file_name = basename($_FILES['file']['name']);
             $target_file_path = $target_dir . $file_name;
             $file_type = pathinfo($target_file_path, PATHINFO_EXTENSION);
-
-
             $allow_types = ['jpg', 'png', 'jpeg', 'gif'];
+
             if (in_array($file_type, $allow_types)) {
 
                 if (move_uploaded_file($_FILES['file']['tmp_name'], $target_file_path)) {
@@ -53,18 +50,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ]);
 
                     if ($insert) {
-                        $status_message = "Business registered successfully";
+                        // $status_message = "Business registered successfully";
                     } else {
-                        $status_message = "Error inserting data into database";
+                        // $status_message = "Error inserting data into database";
                     }
                 } else {
-                    $status_message = "Error uploading file";
+                    // $status_message = "Error uploading file";
                 }
             } else {
-                $status_message = "Sorry, only JPG, JPEG, PNG, & GIF files are allowed";
+                // $status_message = "Sorry, only JPG, JPEG, PNG, & GIF files are allowed";
             }
         } else {
-            $status_message = "Please select an image to upload";
+            // $status_message = "Please select an image to upload";
         }
     } catch (PDOException $e) {
         echo "Database connection exception: " . $e->getMessage();
@@ -86,10 +83,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-    <header>
+    <header class="mobile-header">
         <button onclick="displayMenu()" id="menu-button"><i class="fa-solid fa-bars fa-2xl"></i></button>
     </header>
 
+    <header class="desktop-header">
+        <a href="home.php">HOME</a>
+        <a href="share.php">ADD YOUR BAR</a>
+        <a href="discover.php">DISCOVER</a>
+        <a href="account.php">MY ACCOUNT</a>
+        <a href="logout.php">LOG OUT</a>
+    </header>
 
     <body>
         <?php include "_includes/logged_in_menu.php"; ?>
@@ -101,8 +105,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </main>
 
         <aside>
+            <div class="slogan"><img src="styles/images/add.png" alt="" width="400px"></div>
             <div class="container">
-                <p class="slogan">Add your business here</p>
+                <!-- <p class="slogan">Add your business here</p> -->
 
                 <?php if (!empty($status_message)) {
                     echo '<p>' . $status_message . '</p>';

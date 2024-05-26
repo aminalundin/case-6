@@ -3,7 +3,7 @@ include_once "_includes/database_connection.php";
 
 $status_message = "";
 
-// File upload directory
+// file upload directory
 $target = 'tmp/';
 
 if (isset($_POST["submit"])) {
@@ -12,30 +12,30 @@ if (isset($_POST["submit"])) {
         $target_file_path = $target . $file_name;
         $file_type = pathinfo($target_file_path, PATHINFO_EXTENSION);
 
-        // Allowed formats
+        // allowed formats
         $allow_types = array('jpg', 'png', 'jpeg', 'gif');
-        if (in_array($file_type, $allow_types)) { // Fixed condition to accept allowed types
+        if (in_array($file_type, $allow_types)) {
 
-            // Upload to server
-            if (move_uploaded_file($_FILES['file']['tmp_name'], $target_file_path)) { // Fixed typo in `move_uploaded_file`
-                // Insert to database
+            // upload to server
+            if (move_uploaded_file($_FILES['file']['tmp_name'], $target_file_path)) {
+                // insert to database
                 $sql = "INSERT INTO business (`image_url`) VALUES (:file_name)";
                 $stmt = $pdo->prepare($sql);
-                $insert = $stmt->execute([':file_name' => $file_name]); // Correctly execute with bind parameter
+                $insert = $stmt->execute([':file_name' => $file_name]);
 
                 if ($insert) {
-                    $status_message = "File uploaded successfully";
+                    // $status_message = "File uploaded successfully";
                 } else {
-                    $status_message = "Error inserting file into database";
+                    // $status_message = "Error inserting file into database";
                 }
             } else {
-                $status_message = "Error uploading file";
+                // $status_message = "Error uploading file";
             }
         } else {
-            $status_message = "Sorry, file format not allowed";
+            // $status_message = "Sorry, file format not allowed";
         }
     } else {
-        $status_message = "Please select a file to upload";
+        // $status_message = "Please select a file to upload";
     }
 }
 ?>

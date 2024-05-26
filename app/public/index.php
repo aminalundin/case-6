@@ -13,8 +13,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="mobile-header">
         <button onclick="displayMenu()" id="menu-button"><i class="fa-solid fa-bars fa-2xl"></i></button>
+    </header>
+
+    <header class="desktop-header">
+        <a href="index.php">HOME</a>
+        <a href="register.php">REGISTER</a>
+        <a href="login.php">LOG IN</a>
     </header>
 
     <?php include "_includes/menu.php"; ?>
@@ -27,9 +33,9 @@
     <aside>
 
         <div class="slogan"><img src="styles/images/slogan.png" alt=""></div>
-        <p class="content">WELCOME TO POUR,THE ULTIMATE APP FOR DISCOVERING THE BEST WINE BARS IN YOUR AREA</p><br>
+        <p class="content">WELCOME TO POUR,THE ULTIMATE APP FOR DISCOVERING THE BEST BARS IN YOUR AREA</p><br>
 
-        <p class="content"> JOIN POUR TODAY AND ELEVATE YOUR WINE EXPERIENCE, ONE GLASS AT A TIME!</p>
+        <p class="content"> JOIN POUR TODAY AND ELEVATE YOUR DRINKING EXPERIENCE, ONE GLASS AT A TIME!</p>
 
         </p>
     </aside>
