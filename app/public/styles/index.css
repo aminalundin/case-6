@@ -58,6 +58,13 @@
         font-size: 18pt;
         font-weight: 300;
     }
+    .mobile-header button {
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
 
     /* MAIN */
 

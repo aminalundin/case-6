@@ -45,12 +45,12 @@
 
     /* HEADER */
   
-    header .mobile-header {
+    .mobile-header {
         padding: 10px;
         position: absolute;
     }
 
-    header .desktop-header {
+    .desktop-header {
         display: none;
     }
     a {
@@ -60,7 +60,7 @@
         font-weight: 300;
     }
 
-    header .mobile-header button {
+    .mobile-header button {
         height: 50px;
         width: 50px;
         background-color: transparent;
@@ -150,7 +150,7 @@
     }
 
     /* HEADER */
-    header .desktop-header {
+    .desktop-header {
         display: flex;
         height: 100vh;
         width: 100%;
@@ -158,11 +158,11 @@
         padding: 10px;
         position: absolute;
     }
-    header .mobile-header {
+    .mobile-header {
         display: none;
     }
 
-    header .mobile-header button {
+    .mobile-header button {
         display: none;
     }
 

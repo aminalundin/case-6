@@ -7,11 +7,13 @@ Se till att du har igång Docker Desktop i bakgrunden.
 Tar bort allt lokalt från Docker:
 `docker system prune`
 
+
 För att starta ett nytt projekt och få en docker-compose fil:
 `docker-compose up`
 
 Klona ner git repot från:
 `https://github.com/aminalundin/case-6.git`
+![här hittar du clone adressen](/app/public/styles/images/screenshot.png)
 
 Ange sedan denna adressen i din webbläsare för att komma igång:
 `http://localhost:8060/setup.php`
